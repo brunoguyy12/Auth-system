@@ -1,0 +1,51 @@
+.login-info{
+    @apply flex items-center justify-between
+}
+
+.form-details{
+    @apply px-2 sm:px-4 md:px-8 lg:px-12 xl:px-16 2xl:px-20;
+}
+
+.login-title{
+    @apply text-center my-5;
+}
+
+.login-inputs{
+    @apply my-5 ;
+}
+
+.input-container{
+    @apply border border-neutral-400 mb-5 max-h-[55px] py-1 px-4 relative rounded-xl flex flex-col justify-center
+}
+
+.input-container input{
+    @apply w-full bg-transparent outline-none;
+}
+
+.input-container label{
+    @apply  font-medium transition-all;
+}
+/* .input-container input:focus + label{ 
+    @apply text-sky-500;
+} */
+
+.input-container span{
+    @apply absolute top-1/2 right-4 transform -translate-y-1/2 py-px rounded-full  px-2 hover:bg-slate-100 text-slate-500 z-10 cursor-pointer hover:text-slate-600;
+}
+
+
+.myRotate{
+    /* transform:rotateY(180deg); */
+    animation: closeAndRotate 1s ease 1;
+}
+
+@keyframes closeAndRotate{
+    0% {
+        transform: rotateY(0deg);
+        opacity:1;
+    }
+    100%{
+        transform: rotateY(180deg);
+        opacity: 0;
+    }
+}
